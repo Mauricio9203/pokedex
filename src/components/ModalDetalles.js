@@ -134,7 +134,7 @@ const ModalDetalles = ({nombrePokemon, urlPokemon, verBoton,selectedOption, nume
                   </div>
                 </div>
                 <div className='col-6' style={{ minWidth: '300px' }}>
-                  <div className="card" style={{ minHeight: '300px' }}>
+                  <div className="card" style={{ minHeight: '350px' }}>
                     <div className="card-body">
                       <DatosPokemon infoPokemon={infoPokemon}/>
                     </div>

@@ -49,7 +49,6 @@ const DatosPokemon = (infoPokemon = []) => {
     }
 
     const handleInformacionHabilidad = async () => {
-        let url = infoPokemon["infoPokemon"]["abilities"][0]["ability"]["url"]
         let listaUrl = infoPokemon["infoPokemon"]["abilities"]
         let datosProcesados = []
     
@@ -139,11 +138,11 @@ const DatosPokemon = (infoPokemon = []) => {
                     <div className="col-9 mt-2"><DatosPokemonStats color={"warning"} valor={infoPokemon["infoPokemon"]["stats"][2]["base_stat"]} valorMaximo={230}/></div>
                 </div>
                 <div className="row">
-                    <div className="col-3"><b style={{fontSize: "11px"}}>SP ATK</b></div>
+                    <div className="col-3"><b style={{fontSize: "11px"}}>Sp ATK</b></div>
                     <div className="col-9 mt-2"><DatosPokemonStats color={"secondary"} valor={infoPokemon["infoPokemon"]["stats"][3]["base_stat"]} valorMaximo={194}/></div>
                 </div>
                 <div className="row">
-                    <div className="col-3"><b style={{fontSize: "11px"}}>SP DEF</b></div>
+                    <div className="col-3"><b style={{fontSize: "11px"}}>Sp DEF</b></div>
                     <div className="col-9 mt-2"><DatosPokemonStats color={"info"} valor={infoPokemon["infoPokemon"]["stats"][4]["base_stat"]} valorMaximo={230}/></div>
                 </div>
                 <div className="row">
