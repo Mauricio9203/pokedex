@@ -39,7 +39,7 @@ const DatosPokemonMovimientos = (movimientos = []) => {
       <td style={{ fontSize: "12px" }}>{element.move.name}</td>
       <td style={{ fontSize: "12px" }}>
         <button className='btn btn-outline-danger btn-sm' onClick={() => handleDetalleMovimiento(element.move.url)} style={{ fontSize: "11px", maxHeight: "25px" }}>
-          Detalle
+          Details
         </button>
       </td>
     </tr>
@@ -58,8 +58,8 @@ const DatosPokemonMovimientos = (movimientos = []) => {
         <thead className='thead-dark'>
           <tr>
             <th style={{fontSize: "12px"}}>N°</th>
-            <th style={{fontSize: "12px"}}>Nombre</th>
-            <th style={{fontSize: "12px"}}>Detalle</th>
+            <th style={{fontSize: "12px"}}>Name</th>
+            <th style={{fontSize: "12px"}}>Details</th>
           </tr>
         </thead>
         <tbody>

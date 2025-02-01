@@ -29,7 +29,7 @@ const CustomSelect = (personajes) => {
       <Select
         options={select} 
         styles={customStyles}  
-        placeholder="Buscar Pokemon" 
+        placeholder="Search Pokemon" 
         value={selectedOption}
         onChange={setSelectedOption}
       />

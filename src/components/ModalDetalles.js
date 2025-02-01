@@ -97,13 +97,13 @@ const ModalDetalles = ({nombrePokemon, urlPokemon, verBoton,selectedOption, nume
       <>
       {verBoton &&
         <Button variant="primary" className="btn btn-dark btn-block btn-sm text-white col-11 mb-2" onClick={() => verDetalles(urlPokemon)}>
-          Detalle
+          Information
         </Button>
       }  
 
         <Modal show={showModal} onHide={handleClose} size="xl">
           <Modal.Header closeButton>
-            <Modal.Title>Información de {nombrePokemon}</Modal.Title>
+            <Modal.Title>{nombrePokemon} Information</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <div className='container'>
@@ -146,7 +146,7 @@ const ModalDetalles = ({nombrePokemon, urlPokemon, verBoton,selectedOption, nume
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
-              Cerrar
+              Close
             </Button>
           </Modal.Footer>
         </Modal>

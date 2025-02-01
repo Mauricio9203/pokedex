@@ -149,11 +149,11 @@ const Paginacion = ({paginaActual, paginaSiguiente, paginaAnterior, cantidadPers
       <nav aria-label="..." className="mt-4">
         <ul className="pagination pagination-sm">
           <li className={`page-item ${estadoPrevious}`}>
-            <button className="page-link" onClick={paginaAnterior}>Anterior</button>
+            <button className="page-link" onClick={paginaAnterior}>Previous </button>
           </li>
           {generarPaginacion()}
           <li className={`page-item ${estadoNext}`}>
-            <button className="page-link" onClick={paginaSiguiente}>Siguiente</button>
+            <button className="page-link" onClick={paginaSiguiente}>Next</button>
           </li>
         </ul>
       </nav>

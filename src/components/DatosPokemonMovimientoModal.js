@@ -108,25 +108,27 @@ const DatosPokemonMovimientoModal = ({ show, onHide, datosMovimiento}) => {
             <div className='col-6 mb-3' style={{minWidth:"300px"}}>
               <div className='card shadow'>
                 <div className='card-body'>
-                <b>Tipo: </b>{tipo}<br/>
-                <b>Precisión:</b> {precision} <br/>
+                <b>Type: </b>{tipo}<br/>
+                <b>Accuracy:</b> {precision} <br/>
                 <b>PP: </b>{pp}<br/>
-                <b>Clase de Daño: </b>{tipoDano}<br/>
+                <b>Damage Class: </b>{tipoDano}<br/>
                 </div>
               </div>
             </div>
             <div className='col-6' style={{minWidth:"320px"}}>
               <ul className="nav nav-tabs">
-                  <li className="nav-item">
-                      <button className={`nav-link ${pestanaEspanol}`} onClick={()=> handleCambiarIdioma(1)} aria-current="page" >Español</button>
-                  </li>
-                  <li className="nav-item">
+              <li className="nav-item">
                       <button className={`nav-link ${pestanaIngles}`} onClick={()=> handleCambiarIdioma(2)} aria-current="page" >English</button>
                   </li>
+                  <li className="nav-item">
+                      <button className={`nav-link ${pestanaEspanol}`} onClick={()=> handleCambiarIdioma(1)} aria-current="page" >Spanish</button>
+                  </li>
+               
               </ul>
               <div className='row mt-1'>
+              {ingles && <div className='col'> <div className='zoom-div alert alert-primary fade-in-element'>{descripcionIngles}</div></div>}
                   {espanol && <div className='col'><div className=' zoom-div alert alert-info fade-in-element'>{descripcionEspanol}</div>  </div>}
-                  {ingles && <div className='col'> <div className='zoom-div alert alert-primary fade-in-element'>{descripcionIngles}</div></div>}
+                 
               </div>
             </div>
           </div>

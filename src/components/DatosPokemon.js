@@ -61,7 +61,7 @@ const DatosPokemon = (infoPokemon = []) => {
             } catch (error) {
                 // Manejo del error, si es necesario
                 // Puedes devolver un valor predeterminado o lanzar una excepción si lo deseas
-                return "No existe información.";
+                return "There is no information.";
             }
         };
     
@@ -90,14 +90,14 @@ const DatosPokemon = (infoPokemon = []) => {
 
         traduccionNombre.forEach(element => {
             let nombreLenguajeNombre = element.language.name
-            if(nombreLenguajeNombre === "es"){
+            if(nombreLenguajeNombre === "en"){
                 nombreHabilidad = element.name
                 //setNombreHabilidad(element.name)
             }
         });
         traduccionDescripcion.forEach(element => {
             let nombreLenguajeDescripcion = element.language.name
-            if(nombreLenguajeDescripcion === "es"){
+            if(nombreLenguajeDescripcion === "en"){
                 descripcion = element.flavor_text
                 //setDescripcionHabilidad(element.flavor_text)
             }
@@ -112,17 +112,17 @@ const DatosPokemon = (infoPokemon = []) => {
                 <button className={`nav-link ${stats}`}  >Stats</button>
             </li>
             <li className="nav-item" onClick={() => handleCambiarPestana(2)} style={{maxWidth: "100px", fontSize: "11px"}}>
-                <button className={`nav-link ${movimientos}`}>Movimientos</button>
+                <button className={`nav-link ${movimientos}`}>Move Set</button>
             </li>
             <li className="nav-item" onClick={() => handleCambiarPestana(3)} style={{maxWidth: "100px", fontSize: "11px"}}>
-                <button className={`nav-link ${habilidad}`}>Habilidad</button>
+                <button className={`nav-link ${habilidad}`}>Skill</button>
             </li>
         </ul>
         {statsPestana &&
             <div className="container mt-1 fade-in-element">
                 <div className="row">
-                    <div className="col-6"><b  style={{fontSize: "15px"}}>Peso: {(((infoPokemon["infoPokemon"]["weight"]/4.53))*0.453592).toFixed(2)}<a style={{fontSize: "10px"}}> kg</a></b></div>
-                    <div className="col-6"><b  style={{fontSize: "15px"}}>Altura: {(infoPokemon["infoPokemon"]["height"]*0.1).toFixed(2)}<a style={{fontSize: "10px"}}> m</a></b> </div>
+                    <div className="col-6"><b  style={{fontSize: "15px"}}>Weight: {(((infoPokemon["infoPokemon"]["weight"]/4.53))*0.453592).toFixed(2)}<a style={{fontSize: "10px"}}> kg</a></b></div>
+                    <div className="col-6"><b  style={{fontSize: "15px"}}>Height: {(infoPokemon["infoPokemon"]["height"]*0.1).toFixed(2)}<a style={{fontSize: "10px"}}> m</a></b> </div>
                 </div>
                 <hr className="bg-primary"/>
                 <div className="row ">
